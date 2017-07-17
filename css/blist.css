@@ -9,7 +9,10 @@ background-size:100% 100%;
 color:white;
 }
 
-.accact{background-color:white;}
+.accact{
+color: black;
+background-color:white;
+}
 .nav-log{
 margin-right:0px;
 
@@ -115,6 +118,7 @@ height:200px;
 }
 
 footer{
+clear:both;
 margin-top:20px;
 background-color:rgba(0,0,0,0.5);
 color:white;
