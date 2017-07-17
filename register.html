@@ -21,111 +21,10 @@ respond.min.js"></script>
 
 	<nav class="navbar navbar-default " role="navigation">
 		<div class="navbar-header">
-			<button type="button" class="navbar-toggle" data-toggle="collapse"
-					data-target="#example-navbar-collapse">
-				<span class="sr-only">Toggle navigation</span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-			</button>
+			
 			<a class="navbar-brand" href="#">BucketList</a>
 		</div>
-		<div class="collapse navbar-collapse navbar-right nav-log" id="example-navbar-collapse">
-			<ul class="nav navbar-nav">
-				<li><a href="#" data-toggle="modal" data-target="#loginModal">Login</a></li>
-				<li><a href="#" data-toggle="modal" data-target="#myModal">SignUp</a></li>
-			</ul>
-
-<!-- Login Modal -->
-<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-	<div class="modal-dialog">
-		<div class="modal-content">
-			<div class="modal-header">
-				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
-					&times;
-				</button>
-				<h4 class="modal-title" id="myModalLabel">Login</h4>
-			</div>
-			<div class="modal-body">
-				<form class="form-horizontal" role="form">
-					<div class="form-group">
-						<label for="firstname" class="col-sm-4 control-label">FirstName</label>
-							<div class="col-sm-8">
-								<input type="text" class="form-control" id="firstname" placeholder="Enter First Name">
-							</div>
-					</div>
-					<div class="form-group">
-						<label for="lastname" class="col-sm-4 control-label">Password</label>
-							<div class="col-sm-8">
-								<input type="text" class="form-control" id="lastname" placeholder="Enter Last Name">
-							</div>
-					</div>
-					<div class="form-group">
-						<div class="col-sm-offset-4 col-sm-8">
-							<div class="checkbox">
-								<label>
-									<input type="checkbox"> Remember me
-								</label>
-							</div>
-						</div>
-					</div>
-				</form>
-			</div>
-			<div class="modal-footer">
-				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-				<button type="button" class="btn btn-primary">Sign in</button>
-			</div>
-		</div><!-- /.modal-content -->
-	</div><!-- /.modal -->
-</div>
-
-
-
-<!-- SignUp Modal -->
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-	<div class="modal-dialog">
-		<div class="modal-content">
-			<div class="modal-header">
-				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
-					&times;
-				</button>
-				<h4 class="modal-title" id="myModalLabel">SignUp</h4>
-			</div>
-			<div class="modal-body">
-				<form class="form-horizontal" role="form">
-					<div class="form-group">
-						<label for="firstname" class="col-sm-4 control-label">FirstName</label>
-							<div class="col-sm-8">
-								<input type="text" class="form-control" id="firstname" placeholder="Enter First Name">
-							</div>
-					</div>
-					<div class="form-group">
-						<label for="eaddr" class="col-sm-4 control-label">Email Address</label>
-						<div class="col-sm-8">
-							<input type="text" class="form-control" id="eaddr" placeholder="Email Address">
-						</div>
-					</div>
-					<div class="form-group">
-						<label for="password" class="col-sm-4 control-label">Password</label>
-							<div class="col-sm-8">
-								<input type="password" class="form-control" id="passowrd" placeholder="Password">
-							</div>
-					</div>
-					<div class="form-group">
-						<label for="password" class="col-sm-4 control-label">Re-enter Password</label>
-						<div class="col-sm-8">
-							<input type="password" class="form-control" id="password" placeholder="Re-enter Password">
-						</div>
-					</div>
-				</form>
-			</div>
-			<div class="modal-footer">
-				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-				<button type="button" class="btn btn-primary">Submit Registration</button>
-			</div>
-		</div><!-- /.modal-content -->
-	</div><!-- /.modal -->
-</div>
+		
 </nav>
 
 
@@ -144,43 +43,56 @@ Learn more</a>
 </div>
 
 <section>
-<div class="pop"><h3>Popular Goals</h3></div>
-<div class="container helpcont sampev">
-	<div class="col-md-4 help run"><h3 class="center-block">Run A Marathon</h3></div>
-<div class="col-md-4 help center-block climb"><h3>Climb a mountain</h3></div>
-<div class="col-md-4 help learn"><h3>Learn how to swim</h3></div>
-</div>
+<form class="form-horizontal" action='' method="POST">
+  <fieldset>
+    <div id="legend">
+      <legend class="">Register</legend>
+    </div>
+    <div class="control-group">
+      <!-- Username -->
+      <label class="control-label"  for="username">Username</label>
+      <div class="controls">
+        <input type="text" id="username" name="username" placeholder="" class="input-xlarge">
+        <p class="help-block">Username can contain any letters or numbers, without spaces</p>
+      </div>
+    </div>
+ 
+    <div class="control-group">
+      <!-- E-mail -->
+      <label class="control-label" for="email">E-mail</label>
+      <div class="controls">
+        <input type="text" id="email" name="email" placeholder="" class="input-xlarge">
+        <p class="help-block">Please provide your E-mail</p>
+      </div>
+    </div>
+ 
+    <div class="control-group">
+      <!-- Password-->
+      <label class="control-label" for="password">Password</label>
+      <div class="controls">
+        <input type="password" id="password" name="password" placeholder="" class="input-xlarge">
+        <p class="help-block">Password should be at least 4 characters</p>
+      </div>
+    </div>
+ 
+    <div class="control-group">
+      <!-- Password -->
+      <label class="control-label"  for="password_confirm">Password (Confirm)</label>
+      <div class="controls">
+        <input type="password" id="password_confirm" name="password_confirm" placeholder="" class="input-xlarge">
+        <p class="help-block">Please confirm password</p>
+      </div>
+    </div>
+ 
+    <div class="control-group">
+      <!-- Button -->
+      <div class="controls">
+        <button class="btn btn-success">Register</button>
+      </div>
+    </div>
+  </fieldset>
+</form>
 
-<div class="container helpcont sampev">
-	<div class="col-md-4 help zoo"><h3 class="center-block">Visit a zoo</h3></div>
-	<div class="col-md-4 help pet"><h3>Adopt a pet</h3></div>
-	<div class="col-md-4 help move"><h3>Move out</h3></div>
-</div>
-
-
-<div class="container helpcont sampev">
-	<div class="col-md-4 help business"><h3 class="center-block">Start a business</h3></div>
-	<div class="col-md-4 help center-block debt"><h3>Pay back a debt</h3></div>
-	<div class="col-md-4 help school"><h3>Go back to school</h3></div>
-</div>
-
-<div class="container helpcont sampev">
-	<div class="col-md-4 help count"><h3 class="center-block">Visit a particular country</h3></div>
-<div class="col-md-4 help center-block play"><h3>play an instrument</h3></div>
-<div class="col-md-4 help lose"><h3>Lose weight</h3></div>
-</div>
-</section>
-
-<section>
-<div class="pop"><h3>Gettin started</h3></div>
-
-<div id="how" class="container helpcont">
-	<div class="col-md-3 help"><h3 class="center-block"><span class="badge">1. </span> Create list of activities you would like to complete or achieve.</h3></div>
-<div class="col-md-3 help center-block"><h3><span class="badge">2. </span> Give each activity a timeline.</h3></div>
-<div class="col-md-3 help"><h3><span class="badge">3. </span> Make everyday updates.</h3></div>
-<div class="col-md-3 help"><h3><span class="badge">4. </span> Achieve!</h3></div>
-</div>
-</section>
 </section>
 
 
