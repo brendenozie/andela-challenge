@@ -1,7 +1,7 @@
 $(function() {
     $('#btnRegister').click(function() {
         var user = $('#username').val();
-        var pass = $('#Password').val();
+        var pass = $('#password').val();
         $.ajax({
             url: '/register',
             data: $('form').serialize(),

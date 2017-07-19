@@ -31,8 +31,10 @@ def account():
 
 @app.route('/registerUser', methods=['POST'])
 def registerUser():
-    user =  request.form['username'];
-    password = request.form['Password'];
-    with open('file.json', 'w') as f:
-        json.dump({'status':'OK','user':user,'pass':password}, f)
-    return render_html('account.html')
+	if request.method =='POST':
+		user =  request.form['username'];
+    		password = request.form['password'];
+		data={}
+    		with open('file.txt', 'w') as f:
+        		json.dump(data, f)
+    		return render_template('account.html')
