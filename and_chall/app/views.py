@@ -34,7 +34,10 @@ def registerUser():
 	if request.method =='POST':
 		user =  request.form['username'];
     		password = request.form['password'];
-		data={user:password}
-    		with open('file.txt', 'w') as f:
-        		json.dump(data, f)
-    		return render_template('account.html')
+		if user=="" or password=="":
+			return render_template('register.html')
+		else:
+			data={}
+    			with open('file.txt', 'w') as f:
+        			json.dump(data, f)
+    			return render_template('account.html')
