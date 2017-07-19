@@ -34,7 +34,7 @@ def registerUser():
 	if request.method =='POST':
 		user =  request.form['username'];
     		password = request.form['password'];
-		data={}
+		data={user:password}
     		with open('file.txt', 'w') as f:
         		json.dump(data, f)
     		return render_template('account.html')
