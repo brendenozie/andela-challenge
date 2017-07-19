@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>{% block title %}{% endblock %}</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Bootstrap -->
+<link href="./static/css/bootstrap.min.css" rel="stylesheet">
+<link href="./static/css/blist.css" rel="stylesheet">
+
+<script src="script.js"></script>
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media
+queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/
+html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/
+respond.min.js"></script>
+<![endif]-->
+</head>
+<body>
+<header>
+
+	<nav class="navbar navbar-default " role="navigation">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse"
+					data-target="#example-navbar-collapse">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="#">BucketList</a>
+		</div>
+{%block nav%}
+
+{%endblock%}
+		
+</nav>
+{%block body%}
+{%endblock%}
+</header>
+
+<footer>
+<section class="activity">
+<div class="col-md-4">
+<h4>Bucket</h4>
+<ul>
+<li>Tasks</li>
+<li>Activity</li>
+<li>FAQ</li>
+<li>Terms Of use</li>
+</ul>
+</div>
+<div class="col-md-4">
+<h4>About</h4>
+<ul>
+<li>Contact Us</li>
+<li>help</li>
+<li>Privacy Policy</li>
+</ul>
+</div>
+<div class="col-md-4">
+<h4>SocialLinks</h4>
+<ul>
+<li>Facebook</li>
+<li>Instragam</li>
+<li>Twitter</li>
+</ul>
+</div>
+</section>
+<section class="end">
+<p class="copyright">2017 <a href="#">TheBucketlist</a>. All rights reserved. </p>
+</section>
+</footer>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/jquery.js"></script>
+<script src="https://code.jquery.com/jquery.js"></script>
+<!-- Include all compiled plugins (below), or include individual files
+as needed -->
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
