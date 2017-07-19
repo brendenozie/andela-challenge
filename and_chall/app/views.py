@@ -33,7 +33,6 @@ def account():
 def registerUser():
     user =  request.form['username'];
     password = request.form['Password'];
-    #with open('file.json', 'w') as f:
-    #    json.dump(request.form, f)
-    #return render_html('your_template.html')
-    return json.dumps({'status':'OK','user':user,'pass':password});
+    with open('file.json', 'w') as f:
+        json.dump({'status':'OK','user':user,'pass':password}, f)
+    return render_html('account.html')
