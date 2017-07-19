@@ -1,19 +1,13 @@
 import json
 
-class User(object):
+class User():
 
-    def __init__(self,username,password):
-	self.username=username
-	self.password=password
+    def __init__():
 
-    def login(self,name,pasword):
-	self.username=username
-	self.password=password
+    def login():
 
 
-    def register(self,username,password):
-	self.username=username
-	self.password=password
+    def register():
 
    
 
