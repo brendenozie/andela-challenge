@@ -56,308 +56,39 @@
 		</div>
 	</div>
 </section>
+
 <section class="col-md-8 accact">
 <h1>Bucket!!</h1>
 	<h2>Activity</h2>
 <ul>
-<li>Learn how to drive
+{% for post in posts %}
+	<li>Learn how to drive{{post['title']}}
+		<div class="table-responsive">
+			<table class="table">
+			<caption>Activity tasks</caption>
+				<thead>
+					<tr>
+						<th>Task name</th>
+						<th>Update Date</th>
+						<th>Status</th>
+						<th>Delete</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Find driving school</td>
+						<td>23/11/2013</td>
+						<td>Done</td>
+						<td><input type="checkbox" /></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</li>
 
-<div class="table-responsive">
-<table class="table">
-<caption>Activity tasks</caption>
-<thead>
-<tr>
-<th>Task name</th>
-<th>Update Date</th>
-<th>Status</th>
-<th>Delete</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Find driving school</td>
-<td>23/11/2013</td>
-<td>Done</td>
-<td><input type="checkbox" /></td>
-</tr>
-<tr>
-<td>Drive a manual car</td>
-<td>10/11/2013</td>
-<td>pending</td>
-<td><input type="checkbox" /></td>
-</tr>
-<tr>
-<td>task 3</td>
-<td>20/10/2013</td>
-<td>pending</td>
-<td><input type="checkbox" /></td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-<li>Learn how to drive
-
-<div class="table-responsive">
-<table class="table">
-<caption>Activity tasks</caption>
-<thead>
-<tr>
-<th>Task name</th>
-<th>Update Date</th>
-<th>Status</th>
-<th>Delete</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Find driving school</td>
-<td>23/11/2013</td>
-<td>Done</td>
-<td><input type="checkbox" /></td>
-</tr>
-<tr>
-<td>Drive a manual car</td>
-<td>10/11/2013</td>
-<td>pending</td>
-<td><input type="checkbox" /></td>
-</tr>
-<tr>
-<td>task 3</td>
-<td>20/10/2013</td>
-<td>pending</td>
-<td><input type="checkbox" /></td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-
-<li>Learn how to drive
-
-<div class="table-responsive">
-<table class="table">
-<caption>Activity tasks</caption>
-<thead>
-<tr>
-<th>Task name</th>
-<th>Update Date</th>
-<th>Status</th>
-<th>Delete</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Find driving school</td>
-<td>23/11/2013</td>
-<td>Done</td>
-<td><input type="checkbox" /></td>
-</tr>
-<tr>
-<td>Drive a manual car</td>
-<td>10/11/2013</td>
-<td>pending</td>
-<td><input type="checkbox" /></td>
-</tr>
-<tr>
-<td>task 3</td>
-<td>20/10/2013</td>
-<td>pending</td>
-<td><input type="checkbox" /></td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-
-<li>Learn how to drive
-
-<div class="table-responsive">
-<table class="table">
-<caption>Activity tasks</caption>
-<thead>
-<tr>
-<th>Task name</th>
-<th>Update Date</th>
-<th>Status</th>
-<th>Delete</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Find driving school</td>
-<td>23/11/2013</td>
-<td>Done</td>
-<td><input type="checkbox" /></td>
-</tr>
-<tr>
-<td>Drive a manual car</td>
-<td>10/11/2013</td>
-<td>pending</td>
-<td><input type="checkbox" /></td>
-</tr>
-<tr>
-<td>task 3</td>
-<td>20/10/2013</td>
-<td>pending</td>
-<td><input type="checkbox" /></td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-
-<li>Learn how to drive
-
-<div class="table-responsive">
-<table class="table">
-<caption>Activity tasks</caption>
-<thead>
-<tr>
-<th>Task name</th>
-<th>Update Date</th>
-<th>Status</th>
-<th>Delete</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Find driving school</td>
-<td>23/11/2013</td>
-<td>Done</td>
-<td><input type="checkbox" /></td>
-</tr>
-<tr>
-<td>Drive a manual car</td>
-<td>10/11/2013</td>
-<td>pending</td>
-<td><input type="checkbox" /></td>
-</tr>
-<tr>
-<td>task 3</td>
-<td>20/10/2013</td>
-<td>pending</td>
-<td><input type="checkbox" /></td>
-</tr>
-</tbody>
-</table>
-</div>
-
-</li>
-
-
-<li>Learn how to drive
-
-<div class="table-responsive">
-<table class="table">
-<caption>Activity tasks</caption>
-<thead>
-<tr>
-<th>Task name</th>
-<th>Update Date</th>
-<th>Status</th>
-<th>Delete</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Find driving school</td>
-<td>23/11/2013</td>
-<td>Done</td>
-<td><input type="checkbox" /></td>
-</tr>
-<tr>
-<td>Drive a manual car</td>
-<td>10/11/2013</td>
-<td>pending</td>
-<td><input type="checkbox" /></td>
-</tr>
-<tr>
-<td>task 3</td>
-<td>20/10/2013</td>
-<td>pending</td>
-<td><input type="checkbox" /></td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-
-<li>Learn how to drive
-
-<div class="table-responsive">
-<table class="table">
-<caption>Activity tasks</caption>
-<thead>
-<tr>
-<th>Task name</th>
-<th>Update Date</th>
-<th>Status</th>
-<th>Delete</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Find driving school</td>
-<td>23/11/2013</td>
-<td>Done</td>
-<td><input type="checkbox" /></td>
-</tr>
-<tr>
-<td>Drive a manual car</td>
-<td>10/11/2013</td>
-<td>pending</td>
-<td><input type="checkbox" /></td>
-</tr>
-<tr>
-<td>task 3</td>
-<td>20/10/2013</td>
-<td>pending</td>
-<td><input type="checkbox" /></td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-
-<li>Learn how to drive
-
-<div class="table-responsive">
-<table class="table">
-<caption>Activity tasks</caption>
-<thead>
-<tr>
-<th>Task name</th>
-<th>Update Date</th>
-<th>Status</th>
-<th>Delete</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Find driving school</td>
-<td>23/11/2013</td>
-<td>Done</td>
-<td><input type="checkbox" /></td>
-</tr>
-<tr>
-<td>Drive a manual car</td>
-<td>10/11/2013</td>
-<td>pending</td>
-<td><input type="checkbox" /></td>
-</tr>
-<tr>
-<td>task 3</td>
-<td>20/10/2013</td>
-<td>pending</td>
-<td><input type="checkbox" /></td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-
-
+  {% else %}
+    <li><em>Unbelievable. No posts here so far!</em></li>
+  {% endfor %}
 </ul>
 
 <div class="new">
