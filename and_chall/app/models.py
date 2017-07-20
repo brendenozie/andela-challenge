@@ -1,10 +1,11 @@
-import json
-
 class User():
 
-    def __init__():
+    def __init__(self,userName,password):
+	self.username=username
+	self.password=password
 
     def login():
+	if (Username== and Password==)
 
 
     def register():

@@ -1,0 +1,50 @@
+{%extends "base.html"%}
+{% block title%}Account{%endblock%}
+{% block nav%}
+
+
+
+		<div class="collapse navbar-collapse navbar-right" id="example-navbar-collapse">
+			<ul class="nav navbar-nav">
+				<li><a href="#" data-toggle="modal" data-target="#loginModal">UserName</a></li>
+				<li><a href="#" data-toggle="modal" data-target="#myModal">User Account Settings</a></li>
+				<li><a href="#" data-toggle="modal" data-target="#myModal">Logout</a></li>
+			</ul>
+		</div>
+{%endblock%}
+{% block body%}
+<p> Text! </p> 
+<ul></ul>
+
+<script type = "application/javascript" >
+    $(document).ready(function()
+	{
+            $.getJSON("/json1", function(data)
+		{
+		 var ul = $('<ul>').appendTo('body');
+		 var parent = document.createElement("ul");
+		 document.body.appendChild(parent);
+                 $(data.j).each(function(index, item) {var keys = Object.keys(item['joho']);
+			for(var i = 0; i < keys.length; i++) {
+  				var child = document.createElement("li");
+  				child.innerHTML = item[keys[i]][0];
+  				parent.appendChild(child);
+			}
+                 });
+
+
+
+
+	    	});
+	});
+ </script>
+    
+    
+
+
+
+
+
+
+{%endblock%}
+
