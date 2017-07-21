@@ -3,7 +3,7 @@ To run the application:
 
   first navigate to the terminal environment of your choice
   
-    if flask do a cd environment path to navigate environment directory
+    if flask do  a cd environment path to navigate environment directory
     
     Now activate the environment by executing . venv/bin/activate
     
