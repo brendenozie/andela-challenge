@@ -1,5 +1,6 @@
 # andela-challenge
 To run the application:
+
   first navigate to the terminal environment of your choice
     if flask doa cd environment path
     Now activate the environment by executing . venv/bin/activate
