@@ -1,4 +1,5 @@
-from flask import render_template, request, json
+from flask import render_template, request,  jsonify, json
+import os
 
 from app import app
 
@@ -31,8 +32,62 @@ def account():
 
 @app.route('/registerUser', methods=['POST'])
 def registerUser():
-    user =  request.form['username'];
-    password = request.form['Password'];
-    with open('file.json', 'w') as f:
-        json.dump({'status':'OK','user':user,'pass':password}, f)
-    return render_html('account.html')
+	if request.method =='POST':
+		user =  request.form['username'];
+    		password = request.form['password'];
+		if user=="" or password=="":
+			return render_template('register.html')
+		else:
+			data={}
+			data={user:password}
+    			with open('file.txt', 'w') as f:
+        			json.dump(data, f)
+    			return render_template('account.html')
+
+
+@app.route('/loginUser', methods=['POST'])
+def do_admin_login():
+    if request.form['password'] == 'password' and request.form['username'] == 'admin':
+        session['logged_in'] = True
+	return render_template('register.html')
+    else:
+        flash('wrong password!')
+    return home()
+
+
+
+
+
+
+
+
+
+
+
+
+
+@app.route('/sample')
+def sample():
+	return render_template("sample.html")
+
+
+
+
+
+
+@app.route('/json1',methods=['GET','POST'])
+def json1():
+   with open(os.path.join(os.path.dirname(__file__),"samp.json"), 'r') as json_data:
+   	j = json.load(json_data)
+   return j
+
+
+
+
+
+
+
+
+
+
+
